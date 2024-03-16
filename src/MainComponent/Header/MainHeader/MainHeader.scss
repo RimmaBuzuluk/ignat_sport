@@ -1,0 +1,29 @@
+@import '../../../App.scss';
+
+.MainHeader_block {
+	background-color: #363636;
+	box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.8);
+
+	.MainHeader {
+		@extend .Container;
+		font-family: $textFonts_roboto;
+		font-size: 12px;
+		line-height: 16px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 40px;
+		.MainHeader_contact {
+			display: flex;
+			color: $textColor_white;
+			.MainHeader_help {
+				margin-left: 24px;
+			}
+		}
+		.MainHeader_auth {
+			display: flex;
+			color: $textColor_lightGray;
+		}
+	}
+}

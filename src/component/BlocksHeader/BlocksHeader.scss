@@ -1,0 +1,29 @@
+@import '../../App.scss';
+
+.BlocksHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $textColor_blackGrey;
+	.BlocksHeader_title {
+		font-size: 26px;
+		line-height: 40px;
+		font-weight: 500;
+	}
+	.BlocksHeader_page {
+		display: flex;
+		.BlocksHeader_number {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		.BlocksHeader_arrows {
+			display: flex;
+			margin-left: 30px;
+			.BlocksHeader_arrow {
+				&:not(:last-child) {
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+$textFonts_roboto: 'Roboto', sans-serif;
+$textFonts_inter: 'Inter', sans-serif;
+$textFonts_montserrat: 'Montserrat', sans-serif;
+
+$textColor_black: #000000;
+$textColor_blackGrey: #343434;
+$textColor_white: #ffffff;
+$textColor_gray: #626262;
+$textColor_lightGray: #d9d9d9;
+$textColor_green: #4aaa4e;
+
+$container_max_width: 1200px;
+$container_padding: 20px;
+
+.Container {
+	max-width: $container_max_width;
+	margin: 0 auto;
+}
+
+.App {
+	// background-color: #ffffff;
+	// background-color: #4aaa4e;
+}

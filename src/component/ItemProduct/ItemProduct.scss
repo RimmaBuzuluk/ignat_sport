@@ -1,0 +1,36 @@
+@import '../.././App.scss';
+
+.ItemProduct {
+	// flex: 1 0 370px;
+
+	.ItemProduct_img {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.ItemProduct_information {
+		.ItemProduct_title {
+			font-size: 20px;
+			color: $textColor_blackGrey;
+			font-weight: 500;
+			line-height: 26px;
+		}
+		.ItemProduct_type {
+			font-size: 16px;
+			line-height: 24px;
+			color: $textColor_gray;
+		}
+		.ItemProduct_desctiption {
+			font-size: 16px;
+			line-height: 24px;
+			color: $textColor_gray;
+		}
+		.ItemProduct_price {
+			color: $textColor_green;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 40px;
+		}
+	}
+}

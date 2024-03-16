@@ -1,0 +1,13 @@
+@import '../../../App.scss';
+
+.MainProductBlock {
+	@extend .Container;
+	margin-top: 80px;
+	.MainProductBlock_items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 30px;
+		margin-top: 31px;
+	}
+}

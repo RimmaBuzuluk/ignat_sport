@@ -1,0 +1,61 @@
+@import '../../../App.scss';
+
+.MainKatalog {
+	@extend .Container;
+	margin-top: 36px;
+	display: flex;
+	justify-content: space-between;
+	height: auto;
+	font-style: $textFonts_roboto;
+	@media (max-width: 800px) {
+		flex-direction: column;
+	}
+	.MainKatalog_information {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@media (max-width: 800px) {
+			text-align: center;
+		}
+		.MainKatalog_title {
+			font-size: 38px;
+			color: $textColor_blackGrey;
+			font-weight: 500;
+			line-height: 50px;
+			width: 100%;
+		}
+		.MainKatalog_text {
+			font-size: 16px;
+			color: $textColor_gray;
+			line-height: 25px;
+			// width: 422px;
+			margin-top: 30px;
+			margin-bottom: 40px;
+			@media (max-width: 800px) {
+				text-align: center;
+			}
+		}
+		.MainKatalog_button {
+			button {
+				width: 165px;
+				height: 51px;
+				border: none;
+				border-radius: 15px;
+				background-color: #000000;
+				color: #ffffff;
+				line-height: 24px;
+				font-size: 16px;
+				font-weight: 400;
+				@media (max-width: 800px) {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	.MainKatalog_img {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

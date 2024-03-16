@@ -1,0 +1,81 @@
+@import '../../../App.scss';
+
+.HeaderMenu_block {
+	box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.2);
+	.HeaderMenu {
+		@extend .Container;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: $textColor_blackGrey;
+		height: 65px;
+
+		.HeaderMenu_logo {
+			font-size: 24px;
+			line-height: 58px;
+			letter-spacing: -2px;
+			font-weight: 500;
+			font-family: $textFonts_montserrat;
+			-webkit-text-stroke-width: 1px; // Ширина обводки (1px)
+			-webkit-text-stroke-color: #000000; // Цвет обводки
+		}
+
+		.HeaderMenu_items {
+			display: flex;
+			font-size: 16px;
+			line-height: 24px;
+			font-family: $textFonts_roboto;
+
+			.HeaderMenu_item {
+				&:not(:last-child) {
+					margin-right: 30px;
+					@media (max-width: 890px) {
+						margin-right: 10px;
+					}
+				}
+			}
+
+			@media (max-width: 685px) {
+				display: none;
+			}
+		}
+
+		.HeaderMenu_iconMenu {
+			display: flex;
+			align-items: center;
+			.HeaderMenu_iconMenuItem {
+				&:not(:last-child) {
+					margin-right: 20px;
+					@media (max-width: 890px) {
+						margin-right: 10px;
+					}
+				}
+			}
+			.HeaderMenu_input {
+				input {
+					height: 40px;
+					width: 262px;
+					border-radius: 15px;
+					background-color: #e8e8e8;
+					border: none;
+					background-image: url('../../../imgIcon/Vector.png');
+					background-position-y: center;
+					background-position-x: 9px;
+					background-size: 20px 20px;
+					background-repeat: no-repeat;
+					outline: none;
+					padding-left: 35px;
+					@media (max-width: 890px) {
+						width: 150px;
+						height: 30px;
+					}
+					@media (max-width: 685px) {
+						width: 130px;
+						height: 20px;
+						background-size: 15px 15px;
+					}
+				}
+			}
+		}
+	}
+}

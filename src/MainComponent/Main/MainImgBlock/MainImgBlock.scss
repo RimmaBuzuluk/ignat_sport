@@ -1,0 +1,103 @@
+@import '../../../App.scss';
+
+.MainImg {
+	width: 100%;
+	height: auto;
+	position: relative;
+	color: $textColor_white;
+	.MainImg_Img {
+		img {
+			width: 100%;
+			height: auto;
+		}
+		position: relative;
+		z-index: 1;
+	}
+	.MainImg_information {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.MainImg_text_left {
+			width: 470px;
+			@media (max-width: 900px) {
+				width: 250px;
+			}
+			@media (max-width: 635px) {
+				width: 150px;
+			}
+			@media (max-width: 490px) {
+				width: 100px;
+			}
+			.MainImg_text_title {
+				font-weight: 900;
+				font-size: 64px;
+				@media (max-width: 900px) {
+					font-size: 36px;
+				}
+				@media (max-width: 635px) {
+					font-size: 24px;
+				}
+				@media (max-width: 490px) {
+					font-size: 16px;
+				}
+			}
+			.MainImg_text_titleNike {
+				font-weight: 300;
+				font-size: 64px;
+				@media (max-width: 900px) {
+					font-size: 36px;
+				}
+				@media (max-width: 635px) {
+					font-size: 24px;
+				}
+				@media (max-width: 490px) {
+					font-size: 16px;
+				}
+			}
+		}
+		.MainImg_text_right {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.MainImg_text_sellers {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font-size: 40px;
+				font-weight: 300;
+				background-color: rgba(255, 255, 255, 0.3);
+				width: 370px;
+				height: 59px;
+				@media (max-width: 900px) {
+					font-size: 20px;
+					width: 300px;
+					height: 40px;
+				}
+				@media (max-width: 635px) {
+					width: 200px;
+					height: 30px;
+				}
+				@media (max-width: 490px) {
+					font-size: 16px;
+					width: 150px;
+					height: 20px;
+				}
+			}
+			.MainImg_text_sellersText {
+				font-size: 20px;
+				@media (max-width: 900px) {
+					font-size: 15px;
+				}
+				@media (max-width: 635px) {
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
