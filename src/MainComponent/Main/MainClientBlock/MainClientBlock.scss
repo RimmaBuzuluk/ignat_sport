@@ -1,0 +1,15 @@
+@import '../../../App.scss';
+
+.MainClientBlock {
+	@extend .Container;
+	margin-top: 108px;
+	.MainClientBlock_comment {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		gap: 30px;
+
+		margin-top: 30px;
+	}
+}

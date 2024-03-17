@@ -1,0 +1,36 @@
+@import '../../App.scss';
+
+.ItemComment {
+	border: 1px solid #000000;
+	border-radius: 10px;
+	padding: 37px;
+	font-size: 16px;
+	flex: 1 0 200px;
+
+	.ItemComment_header {
+		display: flex;
+		.ItemComment_img {
+			margin-right: 19px;
+		}
+		.ItemComment_mainInform {
+			.ItemComment_stars {
+				display: flex;
+				align-items: center;
+				img {
+					&:not(:last-child) {
+						margin-right: 4px;
+					}
+				}
+			}
+			.ItemComment_name {
+				line-height: 30px;
+				font-weight: 500;
+			}
+		}
+	}
+	.ItemComment_text {
+		margin-top: 16px;
+		line-height: 24px;
+		color: $textColor_gray;
+	}
+}

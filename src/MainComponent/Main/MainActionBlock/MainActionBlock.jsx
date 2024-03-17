@@ -6,11 +6,9 @@ export const MainActionBlock = item => {
 			<div className='MainActionBlock_container'>
 				<div className='MainActionBlock_title'>Спіймай всі акції!</div>
 				<div className='MainActionBlock_text'>Підписуйся на Email розсилку і отримуй інформацію про всі акції, які будуть з`влятись у нашому магазині. А у нас їх багато :D</div>
-				<div className='MainActionBlock_buttons'>
+				<div className='MainActionBlock_input'>
 					<div className='MainActionBlock_enter'>
-						<button>введіть</button>
-					</div>
-					<div className='MainActionBlock_share'>
+						<input type='text' placeholder='введіть' />
 						<button>Підписатись</button>
 					</div>
 				</div>
