@@ -1,0 +1,43 @@
+@import '../../../App.scss';
+
+.FooterMain {
+	background-color: #343434;
+	height: 93px;
+	color: $textColor_white;
+
+	.FooterMain_block {
+		@extend .Container;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		.FooterMain_manu {
+			display: flex;
+			font-size: 16px;
+			line-height: 24px;
+			text-transform: uppercase;
+			.FooterMain_item {
+				&:not(:last-child) {
+					margin-right: 30px;
+				}
+			}
+			@media (max-width: 670px) {
+				font-size: 12px;
+			}
+			@media (max-width: 400px) {
+				font-size: 10px;
+			}
+		}
+		.FooterMain_sequr {
+			font-size: 12px;
+			line-height: 16px;
+			@media (max-width: 400px) {
+				font-size: 8px;
+			}
+		}
+		@media (max-width: 670px) {
+			flex-direction: column;
+			justify-content: space-around;
+		}
+	}
+}

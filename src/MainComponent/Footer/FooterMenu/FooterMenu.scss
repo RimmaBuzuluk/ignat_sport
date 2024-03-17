@@ -1,0 +1,42 @@
+@import '../../../App.scss';
+
+.FooterMenu {
+	border-top: 1px solid #cccccc;
+	padding-top: 46px;
+	padding-bottom: 52px;
+	font-family: $textFonts_roboto;
+	.FooterMenu_block {
+		@extend .Container;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		@media (max-width: 690px) {
+			justify-content: center;
+			text-align: center;
+			gap: 50px;
+		}
+		.FooterMenu_list {
+			flex: 1 0 170px;
+			width: auto;
+
+			.FooterMenu_title {
+				font-size: 16px;
+				line-height: 24px;
+				color: $textColor_blackGrey;
+				margin-bottom: 17px;
+				font-weight: 700;
+			}
+			.FooterMenu_items {
+				color: $textColor_gray;
+				font-size: 16px;
+				line-height: 24px;
+				.FooterMenu_item {
+					&:not(:last-child) {
+						margin-bottom: 7px;
+					}
+				}
+			}
+		}
+	}
+}
