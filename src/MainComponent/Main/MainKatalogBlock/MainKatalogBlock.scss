@@ -46,6 +46,15 @@
 				line-height: 24px;
 				font-size: 16px;
 				font-weight: 400;
+				&:hover {
+					background-color: #282828;
+				}
+				&:active {
+					background-color: #282828;
+					box-shadow: 5px 5px #666;
+					transform: translateY(4px);
+					transform: translateX(4px);
+				}
 				@media (max-width: 800px) {
 					margin-bottom: 10px;
 				}

@@ -23,6 +23,7 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		font-family: $textFonts_inter;
 		.MainImg_text_left {
 			width: 470px;
 			@media (max-width: 900px) {
@@ -37,6 +38,7 @@
 			.MainImg_text_title {
 				font-weight: 900;
 				font-size: 64px;
+				font-family: $textFonts_inter;
 				@media (max-width: 900px) {
 					font-size: 36px;
 				}
@@ -50,6 +52,7 @@
 			.MainImg_text_titleNike {
 				font-weight: 300;
 				font-size: 64px;
+				font-family: $textFonts_inter;
 				@media (max-width: 900px) {
 					font-size: 36px;
 				}

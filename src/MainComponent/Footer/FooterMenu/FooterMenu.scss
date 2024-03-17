@@ -10,22 +10,21 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-
 		@media (max-width: 690px) {
 			justify-content: center;
 			text-align: center;
 			gap: 50px;
 		}
 		.FooterMenu_list {
-			flex: 1 0 170px;
-			width: auto;
+			// flex: 1 0 10px;
+			// width: 100%;
 
 			.FooterMenu_title {
 				font-size: 16px;
 				line-height: 24px;
 				color: $textColor_blackGrey;
 				margin-bottom: 17px;
-				font-weight: 700;
+				font-weight: 500;
 			}
 			.FooterMenu_items {
 				color: $textColor_gray;
