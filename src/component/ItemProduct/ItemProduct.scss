@@ -2,11 +2,50 @@
 
 .ItemProduct {
 	// flex: 1 0 370px;
+	flex: 1 0 calc(33.33% - 30px);
+	max-width: calc(33.33% - 30px);
 
-	.ItemProduct_img {
-		img {
+	@media (max-width: 500px) {
+		max-width: calc(33.33%);
+	}
+
+	.ItemProduct_imgBlock {
+		position: relative;
+		.ItemProduct_img {
 			width: 100%;
 			height: auto;
+			position: relative;
+		}
+
+		.ItemProduct_itemLike {
+			position: absolute;
+			width: calc((100% * 35) / 370);
+			height: calc((100% * 35) / 470);
+			border-radius: 50%;
+			border: none;
+			right: 0;
+			top: 0;
+			background-color: #ffffff;
+			margin: 10px;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				display: flex;
+				margin: 0;
+				width: 50%;
+				height: 50%;
+			}
+			&:hover {
+				transition: all 0.5s ease-in-out;
+				background-color: rgb(223, 16, 33);
+				padding: 3px;
+			}
+			&.liked {
+				background-color: rgb(223, 16, 33);
+				padding: 3px;
+			}
 		}
 	}
 	.ItemProduct_information {
@@ -15,22 +54,56 @@
 			color: $textColor_blackGrey;
 			font-weight: 500;
 			line-height: 26px;
+			display: flex;
+			align-items: center;
+			margin-top: 15px;
+
+			@media (max-width: 1000px) {
+				font-size: 15px;
+				line-height: 15px;
+				height: 45px;
+				margin-top: 5px;
+			}
 		}
 		.ItemProduct_type {
 			font-size: 16px;
 			line-height: 24px;
 			color: $textColor_gray;
+			display: flex;
+			align-items: center;
+			margin-top: 20px;
+			@media (max-width: 1000px) {
+				margin-top: 5px;
+			}
+			@media (max-width: 450px) {
+				height: 25px;
+				font-size: 12px;
+				margin-top: 1px;
+			}
 		}
+
 		.ItemProduct_desctiption {
 			font-size: 16px;
 			line-height: 24px;
 			color: $textColor_gray;
+			@media (max-width: 450px) {
+				height: 25px;
+				font-size: 12px;
+			}
 		}
 		.ItemProduct_price {
+			margin-top: 17px;
 			color: $textColor_green;
 			font-weight: bold;
 			font-size: 20px;
 			line-height: 40px;
+			@media (max-width: 1000px) {
+				margin-top: 5px;
+			}
+			@media (max-width: 550px) {
+				margin-top: 1px;
+				font-size: 15px;
+			}
 		}
 	}
 }
